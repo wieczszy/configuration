@@ -199,3 +199,5 @@ function! XTermPasteBegin()
     set paste
     return ""
 endfunction
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
